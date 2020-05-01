@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RtNavbarComponent } from './rt-navbar/rt-navbar.component';
-import { RtFooterComponent } from './rt-footer/rt-footer.component';
-import { CustomMaterialModule } from '../core/custom-material.module';
+import { GoHomeComponent } from './go-home/go-home.component';
 
 @NgModule({
-  declarations: [RtNavbarComponent, RtFooterComponent],
+  declarations: [
+    GoHomeComponent
+  ],
   imports: [
-    CommonModule,
-    CustomMaterialModule
+    CommonModule
   ],
   exports: [
-    RtNavbarComponent,
-    RtFooterComponent
+    GoHomeComponent
   ]
 })
 export class SharedModule { }
